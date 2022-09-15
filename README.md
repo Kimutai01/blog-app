@@ -1,24 +1,44 @@
-# README
+# Blog app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- It is a web application that enables people to share their thoughts
+## Built With
 
-Things you may want to cover:
+- Rails,Ruby and SQL
 
-* Ruby version
+## Live Demo
 
-* System dependencies
+### Download it as a ZIP file
 
-* Configuration
+or
 
-* Database creation
+### Clone it in your local machine using GIT
 
-* Database initialization
+to get a local copy , clone the repository using git clone https://github.com/Kimutai01/blog-app
 
-* How to run the test suite
+After you clone it run the following commands
 
-* Services (job queues, cache servers, search engines, etc.)
+- cd blog-app
+- bundle install
+- rails server
 
-* Deployment instructions
+## Authors
 
-* ...
+👤 **Kiprotich Kimutai**
+
+- GitHub: [@Kimutai01](https://github.com/Kimutai01)
+- Twitter: [@Kimutai_01](https://twitter.com/Kimutai_01?s=09)
+- LinkedIn: [@kiprotichkimutai](https://www.linkedin.com/m/in/kimutai-kiprotich-1b5045216)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Graycemuthui/My-Catalog/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## 📝 License
+
+This project is [MIT](https://github.com/Graycemuthui/My-Catalog/blob/dev/MIT.md) licensed.
