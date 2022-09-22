@@ -1,1 +1,33 @@
-<h1>This is a single user page</h1>
+
+<div class='users-page'>
+    <div class='image-div'>
+        <img src="<%= @user.photo %>" alt="avatar" width="100" height="100"/>
+    </div>
+    <div class= 'single_user'>
+  <%= link_to user_posts_path(@user) do %>
+  <p>
+      <%= @user.name %>
+  </p>
+  <% end %>
+  <p>
+    Number of posts:  <%= @user.posts_counter %>
+  </p>
+  </div>
+</div>
+<h2>Bio</h2>
+<p><%= @user.bio %></p>
+<h2>Posts</h2>
+
+<% @user.last_three_post.each do |f|%>
+<div class='showed_posts'>
+<%= f.title %><br>
+<%= f.text %><br>
+</div>
+<% end %>
+
+<%= link_to user_posts_path(@user) do %>
+  <button class='see-all-button'>
+      see all posts
+  </button>
+  <% end %>
+
