@@ -1,1 +1,32 @@
-<h1>This is the posts page</h1>
+<div>
+  <h2>
+    <%= @author.name %>
+  </h2>
+  <p>
+    Number of posts:  <%= @author.posts_counter %>
+  </p>
+</div>
+
+<% @posts.each do |post| %>
+  <div>
+  <%= link_to user_post_path(post.user, post) do %>
+    <p>
+      Post #<%= post.id %>
+    </p>
+  <% end %>
+    <h3>
+      <%= post.title %>
+    </h3>
+    <p>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %>  </p>
+  </div>
+  <% post.last_five_comments.each do |comment| %>
+    <div>
+      <p>
+        <%= comment.user.name %>
+      </p>
+      <p>
+        <%= comment.text %>
+      </p>
+    </div>
+  <% end %>
+<% end %>
