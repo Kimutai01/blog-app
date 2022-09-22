@@ -1,14 +1,20 @@
-<div>
+<div class='users-page'>
+  <div class='image-div'>
+      <img src="<%= @user.photo %>" alt="avatar" width="100" height="100"/>
+
+    </div>
+    <div class= 'single_user'>
   <h2>
     <%= @user.name %>
   </h2>
   <p>
     Number of posts:  <%= @user.posts_counter %>
   </p>
+  </div>
 </div>
 
 <% @posts.each do |post| %>
-  <div>
+  <div class='posts-d'>
   <%= link_to user_post_path(post.user, post) do %>
     <p>
       Post #<%= post.id %>
@@ -19,14 +25,14 @@
     </h3>
     <p>Comments: <%= post.comments_counter %> Likes: <%= post.likes_counter %>  </p>
   </div>
+  <div class='comments'>
   <% post.last_five_comments.each do |comment| %>
-    <div>
       <p>
         <%= comment.user.name %>
       </p>
       <p>
         <%= comment.text %>
       </p>
-    </div>
   <% end %>
+  </div>
 <% end %>

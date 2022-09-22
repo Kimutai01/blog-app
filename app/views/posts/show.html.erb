@@ -1,4 +1,4 @@
-<div>
+<div class='show-posts'>
   <div>
     <p>
       Post #<%= @post.id %> by <%= @post.user.name %>
@@ -11,10 +11,10 @@
     <%= @post.text %>
   </p>
 </div>
-<div>
+<div class='comments'>
   <% @post.comments.each do |comment| %>
     <p>
-      <%= comment.author.name %> : <%= comment.text %>
+      <%= comment.user.name %> : <%= comment.text %>
     </p>
   <% end %>
 </div>

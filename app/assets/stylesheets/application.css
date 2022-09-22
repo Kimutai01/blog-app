@@ -39,3 +39,15 @@
 .see-all-button {
   margin-left: 50%;
 }
+
+.comments {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.posts-d {
+  border: 1px solid black;
+}
+.show-posts {
+  border: 1px solid black;
+}
