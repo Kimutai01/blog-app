@@ -16,26 +16,32 @@
 .users-page {
   display: flex;
 }
+
 .single_user {
   border: 1px solid black;
   width: 70%;
   margin-bottom: 5px;
 }
+
 .image-div {
   margin-right: 10px;
   margin-bottom: 5px;
 }
+
 .posts {
   margin-left: 90%;
 }
+
 .user_page_div {
   display: flex;
   margin-right: 10px;
 }
+
 .showed_posts {
   border: 1px solid black;
   margin-bottom: 10px;
 }
+
 .see-all-button {
   margin-left: 50%;
 }
@@ -48,6 +54,7 @@
 .posts-d {
   border: 1px solid black;
 }
+
 .show-posts {
   border: 1px solid black;
   margin-bottom: 10px;
